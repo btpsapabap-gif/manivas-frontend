@@ -12,11 +12,10 @@ export default function Sidebar({ active, onNavigate }) {
   return (
     <aside className="sidebar">
       <div className="sidebar-brand">
-        <div className="auth-logo-box">🏨</div>
-        <span>BookMyRoom</span>
+        <img src="/logo.jpg" alt="MA'Nivas" className="sidebar-logo" />
       </div>
 
-      <p className="sidebar-section-label">Enterprise</p>
+      <p className="sidebar-section-label">Management</p>
       <nav>
         {NAV_ITEMS.map(({ key, label, icon: Icon }) => (
           <button
